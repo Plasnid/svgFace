@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>svg, rotate and keyframes</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- graphical content begins here -->
+    <svg width=275px height=120px id="eyes_without_a_face">
+      <!-- left eye and eyebrow -->
+      <g id="left_eye" class="eyes">
+        <rect class="brow" x="50" y="10" width="80" height="15" rx="5" ry="5" />
+        <ellipse class="eye_white" cx="90" cy="60" rx="40" ry="20" fill="white" stroke="black" stroke-width="2"/>
+        <circle class="eye_pupil" cx=90 cy=60 r=10px fill="black"/>
+      </g>
+      
+      <!-- right eye and eyebrow -->
+      <g id="right_eye" class="eyes">
+        <rect class="brow" x="160" y="10" width="80" height="15" rx="5" ry="5" />
+        <ellipse class="eye_white" cx="200" cy="60" rx="40" ry="20" fill="white" stroke="black" stroke-width="2"/>
+        <circle class="eye_pupil" cx=200 cy=60 r=10px fill="black"/>
+      </g>  
+    </svg>
+    <!-- our animation controls are below,  they are a collection of buttons controlled by javascript -->
+    <section id="controls">
+      <fieldset>
+        <legend>Translate</legend>
+        <button id="look_left">Look Left</button>
+        <button id="look_right">Look Right</button>
+      </fieldset>
+      <fieldset>
+        <legend>Rotate</legend>
+        <button id="eye_roll">Eye Roll</button>
+      </fieldset>
+      <fieldset>
+        <legend>Scale and Colour</legend>
+        <button id="scared">Scared</button>    
+      </fieldset>
+      <fieldset>
+        <legend>Skew and Colour</legend>
+        <button id="neuralizer">Neuralizer</button>
+      </fieldset>
+      <fieldset>
+        <legend>Translate and Scale</legend>
+        <button id="concentration">Concentration</button>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Translate and Rotate
+        </legend>
+        <button id="angry">Angry</button>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Translate and Keyframe Animation
+        </legend>
+        <button id="shifty">Shifty</button>
+      </fieldset>
+    </section>
+    <script  src="js/index.js"></script>
+  </body>
+</html>

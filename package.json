@@ -1,0 +1,23 @@
+{
+  "name": "svgface",
+  "version": "1.0.0",
+  "description": "Examples of SVG and keyframe animation",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start":"npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plasnid/svgFace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plasnid/svgFace/issues"
+  },
+  "homepage": "https://github.com/Plasnid/svgFace#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
